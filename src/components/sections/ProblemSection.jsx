@@ -7,7 +7,8 @@ const ProblemSection = () => {
         "You start diets but quit due to impracticality.",
         "You don't know what to eat during business lunches/travel.",
         "The gym feels overwhelming without a plan.",
-        "You need accountability to stay consistent."
+        "You need accountability to stay consistent.",
+        "You start and stop and want to finally get over your yo-yo fitness plan!"
     ];
 
     return (
