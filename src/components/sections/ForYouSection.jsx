@@ -3,7 +3,7 @@ import { Check, X } from 'lucide-react';
 
 const ForYouSection = () => {
     return (
-        <section className="py-20 bg-white">
+        <section id="foryou" className="py-20 bg-white">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 

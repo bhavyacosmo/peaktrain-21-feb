@@ -4,7 +4,7 @@ import { ArrowRight, Star } from 'lucide-react';
 
 const HeroSection = () => {
     return (
-        <section className="relative pt-12 pb-12 md:pb-20 overflow-hidden bg-white"> {/* High contrast white */}
+        <section id="top" className="relative pt-12 pb-12 md:pb-20 overflow-hidden bg-white"> {/* High contrast white */}
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-stretch gap-12">
 
