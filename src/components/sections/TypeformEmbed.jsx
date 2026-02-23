@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom';
 const TypeformEmbed = () => {
     const navigate = useNavigate();
     // TOGGLE THIS: Set to false when you have your real Typeform ID
-    const USE_DEMO_MODE = true;
-    const formId = "cK5d72"; // Your actual Typeform ID goes here
+    const USE_DEMO_MODE = false;
+    const formId = "KhkmFqF7"; // Your actual Typeform ID goes here
 
     if (USE_DEMO_MODE) {
         return <MockTypeform navigate={navigate} />;
