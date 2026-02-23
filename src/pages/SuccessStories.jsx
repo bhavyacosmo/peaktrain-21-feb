@@ -150,14 +150,14 @@ const SuccessStories = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.5 }}
-                                // Sticky Stacking Logic applied only on desktop to prevent mobile cutoff
-                                className="static md:sticky"
+                                // Sticky Stacking Logic applied to all devices
+                                className="sticky"
                                 style={{
-                                    top: `calc(2rem + ${index * 8}px)`, // Responsive tighter stacking for laptop screens
+                                    top: `calc(4rem + ${index * 8}px)`, // Responsive tighter stacking 
                                     zIndex: index + 1
                                 }}
                             >
-                                <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[450px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+                                <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex flex-col md:flex-row min-h-max md:h-[420px] lg:h-[450px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
 
                                     {/* Left Side: Image */}
                                     <div className="w-full md:w-1/2 bg-neutral-100 relative group h-[300px] md:h-full">
