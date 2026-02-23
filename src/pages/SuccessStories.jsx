@@ -150,17 +150,70 @@ const SuccessStories = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.5 }}
-                                // Sticky stacking on desktop only – mobile scrolls normally to prevent content cutoff
-                                className="static md:sticky"
+                                className="sticky"
                                 style={{
                                     top: `calc(4rem + ${index * 8}px)`,
                                     zIndex: index + 1
                                 }}
                             >
-                                <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex flex-col md:flex-row min-h-max md:h-[420px] lg:h-[450px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+                                {/* Mobile Layout: compact horizontal card */}
+                                <div className="block md:hidden bg-white rounded-2xl overflow-hidden shadow-2xl border border-neutral-100">
+                                    {/* Top: Image strip */}
+                                    <div className="relative w-full h-[200px] bg-neutral-100">
+                                        <img
+                                            src={story.image}
+                                            alt={`Before and After of ${story.name}`}
+                                            className="w-full h-full object-cover object-top"
+                                            onError={(e) => {
+                                                e.target.onerror = null;
+                                                e.target.style.display = 'none';
+                                            }}
+                                        />
+                                        <div className="absolute bottom-0 left-0 w-1/2 bg-black/60 text-white text-center py-1.5 text-xs font-bold backdrop-blur-sm">Before</div>
+                                        <div className="absolute bottom-0 right-0 w-1/2 bg-brand-600/90 text-white text-center py-1.5 text-xs font-bold backdrop-blur-sm">After</div>
+                                    </div>
+                                    {/* Bottom: compact info */}
+                                    <div className="p-4">
+                                        <div className="flex justify-between items-center mb-3">
+                                            <div>
+                                                <h3 className="font-bold text-xl text-neutral-900">{story.name}</h3>
+                                                <span className="inline-block px-2 py-0.5 bg-neutral-100 text-neutral-600 text-xs font-medium rounded-full">{story.role}</span>
+                                            </div>
+                                            <div className="flex items-center text-brand-600 font-bold uppercase text-xs tracking-wider">
+                                                <CheckCircle className="w-3.5 h-3.5 mr-1" /> Verified
+                                            </div>
+                                        </div>
+                                        {/* 4 stats in a single row */}
+                                        <div className="grid grid-cols-4 gap-2 mb-3">
+                                            <div className="p-2 bg-neutral-50 rounded-lg border border-neutral-100 text-center">
+                                                <p className="text-neutral-400 text-[9px] uppercase tracking-wider font-semibold">Duration</p>
+                                                <p className="font-bold text-sm text-neutral-800">{story.duration}</p>
+                                            </div>
+                                            <div className="p-2 bg-brand-50 rounded-lg border border-brand-100 text-center">
+                                                <p className="text-brand-400 text-[9px] uppercase tracking-wider font-semibold">Loss</p>
+                                                <p className="font-bold text-sm text-brand-700">{story.loss}</p>
+                                            </div>
+                                            <div className="p-2 bg-neutral-50 rounded-lg border border-neutral-100 text-center">
+                                                <p className="text-neutral-400 text-[9px] uppercase tracking-wider font-semibold">Start</p>
+                                                <p className="font-bold text-sm text-neutral-800">{story.startWeight}</p>
+                                            </div>
+                                            <div className="p-2 bg-neutral-50 rounded-lg border border-neutral-100 text-center">
+                                                <p className="text-neutral-400 text-[9px] uppercase tracking-wider font-semibold">Now</p>
+                                                <p className="font-bold text-sm text-neutral-800">{story.currentWeight}</p>
+                                            </div>
+                                        </div>
+                                        {/* Challenge */}
+                                        <div className="border-l-4 border-brand-500 pl-3">
+                                            <p className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider mb-0.5">Biggest Challenge</p>
+                                            <p className="text-sm text-neutral-700 font-medium italic leading-snug">"{story.struggle}"</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                {/* Desktop Layout: original large split card */}
+                                <div className="hidden md:flex bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex-row h-[420px] lg:h-[450px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
                                     {/* Left Side: Image */}
-                                    <div className="w-full md:w-1/2 bg-neutral-100 relative group h-[300px] md:h-full">
+                                    <div className="w-1/2 bg-neutral-100 relative group h-full">
                                         <img
                                             src={story.image}
                                             alt={`Before and After of ${story.name}`}
@@ -175,25 +228,17 @@ const SuccessStories = () => {
                                         <div className="absolute bottom-0 left-0 w-1/2 bg-black/60 text-white text-center py-2 text-sm font-bold backdrop-blur-sm">Before</div>
                                         <div className="absolute bottom-0 right-0 w-1/2 bg-brand-600/90 text-white text-center py-2 text-sm font-bold backdrop-blur-sm">After</div>
                                     </div>
-
-                                    {/* Right Side: content */}
-                                    <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-
+                                    {/* Right Side: Content */}
+                                    <div className="w-1/2 p-12 flex flex-col justify-center">
                                         <div className="flex justify-between items-start mb-8">
                                             <div>
                                                 <h3 className="font-bold text-3xl text-neutral-900 mb-2">{story.name}</h3>
-                                                <span className="inline-block px-3 py-1 bg-neutral-100 text-neutral-600 text-sm font-medium rounded-full">
-                                                    {story.role}
-                                                </span>
+                                                <span className="inline-block px-3 py-1 bg-neutral-100 text-neutral-600 text-sm font-medium rounded-full">{story.role}</span>
                                             </div>
-                                            <div className="text-right">
-                                                <div className="flex items-center text-brand-600 font-bold uppercase text-xs tracking-wider mb-1">
-                                                    <CheckCircle className="w-4 h-4 mr-1" /> Verified
-                                                </div>
+                                            <div className="flex items-center text-brand-600 font-bold uppercase text-xs tracking-wider">
+                                                <CheckCircle className="w-4 h-4 mr-1" /> Verified
                                             </div>
                                         </div>
-
-                                        {/* Stats Grid */}
                                         <div className="grid grid-cols-2 gap-6 mb-8">
                                             <div className="p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                                                 <p className="text-neutral-400 text-xs uppercase tracking-wider font-semibold mb-1">Duration</p>
@@ -212,15 +257,12 @@ const SuccessStories = () => {
                                                 <p className="font-bold text-xl text-neutral-800">{story.currentWeight}</p>
                                             </div>
                                         </div>
-
-                                        {/* Struggle Section */}
                                         <div className="mt-auto">
                                             <p className="text-xs font-bold text-neutral-400 uppercase tracking-wider mb-2">Biggest Challenge Overcome</p>
                                             <p className="text-lg text-neutral-700 font-medium italic leading-relaxed border-l-4 border-brand-500 pl-4">
                                                 "{story.struggle}"
                                             </p>
                                         </div>
-
                                     </div>
                                 </div>
                             </motion.div>
