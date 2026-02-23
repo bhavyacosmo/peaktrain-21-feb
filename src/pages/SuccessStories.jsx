@@ -153,11 +153,11 @@ const SuccessStories = () => {
                                 // Sticky Stacking Logic applied only on desktop to prevent mobile cutoff
                                 className="static md:sticky"
                                 style={{
-                                    top: `${120 + index * 10}px`, // Staggered top position for stacking effect
+                                    top: `calc(2rem + ${index * 8}px)`, // Responsive tighter stacking for laptop screens
                                     zIndex: index + 1
                                 }}
                             >
-                                <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex flex-col md:flex-row h-auto md:h-[500px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+                                <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-neutral-100 flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[450px] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-300">
 
                                     {/* Left Side: Image */}
                                     <div className="w-full md:w-1/2 bg-neutral-100 relative group h-[300px] md:h-full">
