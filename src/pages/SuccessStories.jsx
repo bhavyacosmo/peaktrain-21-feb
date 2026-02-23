@@ -150,10 +150,10 @@ const SuccessStories = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.5 }}
-                                // Sticky Stacking Logic applied to all devices
-                                className="sticky"
+                                // Sticky stacking on desktop only – mobile scrolls normally to prevent content cutoff
+                                className="static md:sticky"
                                 style={{
-                                    top: `calc(4rem + ${index * 8}px)`, // Responsive tighter stacking 
+                                    top: `calc(4rem + ${index * 8}px)`,
                                     zIndex: index + 1
                                 }}
                             >
