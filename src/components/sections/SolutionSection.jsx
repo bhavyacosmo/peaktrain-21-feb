@@ -13,7 +13,7 @@ const SolutionSection = () => {
                             A System Built Around Your Body, Not Against It.
                         </h2>
                         <p className="text-lg text-neutral-600 mb-6">
-                            Peak Train isn't a crash diet. It's a medically aware, sustainable fat loss protocol specifically designed for people managing PCOS, Thyroid disorders, and Diabetes.
+                            Peak Train isn't a crash diet. It's a medically aware, sustainable fat loss protocol specifically designed for people managing PCOS and Thyroid disorders.
                         </p>
 
                         <ul className="space-y-4">

@@ -21,7 +21,7 @@ const CTASection = () => {
                     </h2>
                     <p className="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto mb-10 leading-relaxed">
                         We are currently accepting applications for the next cohort.
-                        If you have PCOS, Thyroid, or Diabetes and are ready to commit to a 90-day transformation, apply below.
+                        If you have PCOS or Thyroid issues and are ready to commit to a 90-day transformation, apply below.
                     </p>
 
                     <div className="flex justify-center">

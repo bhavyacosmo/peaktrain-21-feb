@@ -19,8 +19,7 @@ const HeroSection = () => {
 
                             <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 tracking-tight mb-6 leading-[1.1]">
                                 Loose Weight with <br />
-                                <span className="text-brand-600">PCOS, Thyroid</span> <br />
-                                or Diabetes
+                                <span className="text-brand-600">PCOS & Thyroid</span>
                             </h1>
 
                             {/* Mobile Only Image */}

@@ -276,7 +276,7 @@ const SuccessStories = () => {
 
                         <h2 className="text-3xl font-bold mb-6 relative z-10">Your Health Transformation Starts Here.</h2>
                         <p className="text-neutral-400 max-w-xl mx-auto mb-8 relative z-10">
-                            Apply now to join the next cohort of clients managing PCOS, Thyroid, or Diabetes — and finally see real, lasting results.
+                            Apply now to join the next cohort of clients managing PCOS or Thyroid — and finally see real, lasting results.
                         </p>
                         <Link
                             to="/"

@@ -14,7 +14,7 @@ const ForYouSection = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "You have PCOS, Thyroid issues, or Diabetes and want real results.",
+                                "You have PCOS or Thyroid issues and want real results.",
                                 "You are willing to be patient and trust the process.",
                                 "You want a medically aware coach, not generic gym advice.",
                                 "You are ready to commit to a sustainable 90-day protocol."

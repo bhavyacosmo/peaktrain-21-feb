@@ -11,7 +11,7 @@ const FAQSection = () => {
         },
         {
             q: "I have tried every diet but my weight doesn't move. Will this work for me?",
-            a: "Yes. Weight resistance due to PCOS, Thyroid, or Diabetes is a metabolic issue, not a willpower issue. Our protocol focuses on healing your metabolism through structured nutrition and progressive exercise — not starvation."
+            a: "Yes. Weight resistance due to PCOS or Thyroid is a metabolic issue, not a willpower issue. Our protocol focuses on healing your metabolism through structured nutrition and progressive exercise — not starvation."
         },
         {
             q: "Do I need to stop my medication to join?",
