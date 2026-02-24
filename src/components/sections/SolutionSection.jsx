@@ -29,11 +29,7 @@ const SolutionSection = () => {
                             ))}
                         </ul>
 
-                        <div className="mt-8">
-                            <a href="#apply" className="text-brand-600 font-bold hover:text-brand-700 underline underline-offset-4">
-                                Learn about our methodology &rarr;
-                            </a>
-                        </div>
+
                     </div>
 
                     <div className="md:w-1/2 w-full">
