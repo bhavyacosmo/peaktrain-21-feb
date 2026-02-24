@@ -16,12 +16,12 @@ const CTASection = () => {
                 >
                     <span className="text-accent-400 font-bold uppercase tracking-widest text-sm mb-4 block">Limited Intake</span>
                     <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-                        Ready to Build Your <br className="hidden md:block" />
-                        <span className="text-accent-500">Peak Physique?</span>
+                        Ready to Finally Get <br className="hidden md:block" />
+                        <span className="text-accent-500">Your Health Back?</span>
                     </h2>
                     <p className="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto mb-10 leading-relaxed">
                         We are currently accepting applications for the next cohort.
-                        If you are ready to commit to a 90-day transformation, apply below.
+                        If you have PCOS, Thyroid, or Diabetes and are ready to commit to a 90-day transformation, apply below.
                     </p>
 
                     <div className="flex justify-center">

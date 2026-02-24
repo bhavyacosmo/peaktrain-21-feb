@@ -18,8 +18,9 @@ const HeroSection = () => {
                             <img src="/assets/Peak-Train-1.png" alt="Peak Train" className="h-12 md:h-16 mb-8" />
 
                             <h1 className="text-4xl md:text-6xl font-extrabold text-neutral-900 tracking-tight mb-6 leading-[1.1]">
-                                Loose 5-7kgs in 90 days <br />
-                                <span className="text-brand-600">SUSTAINABLY</span>
+                                Loose Weight with <br />
+                                <span className="text-brand-600">PCOS, Thyroid</span> <br />
+                                or Diabetes
                             </h1>
 
                             {/* Mobile Only Image */}

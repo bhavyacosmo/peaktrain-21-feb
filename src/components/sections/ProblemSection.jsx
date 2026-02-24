@@ -3,12 +3,12 @@ import { XCircle } from 'lucide-react';
 
 const ProblemSection = () => {
     const painPoints = [
-        "You start and stop and want to finally get over your yo-yo fitness plan!",
-        "You work 8-12 hours daily and feel drained.",
-        "You start diets but quit due to impracticality.",
-        "You don't know what to eat during business lunches/travel.",
-        "The gym feels overwhelming without a plan.",
-        "You need accountability to stay consistent."
+        "You've tried multiple diets but your weight simply doesn't move.",
+        "Your energy levels fluctuate and you feel exhausted all the time.",
+        "You're confused about what's actually safe to eat with your condition.",
+        "Every diet online seems to contradict the last — you don't know who to trust.",
+        "You want structured, medically aware guidance — not a generic plan.",
+        "You start and stop and want to finally break the cycle for good!"
     ];
 
     return (

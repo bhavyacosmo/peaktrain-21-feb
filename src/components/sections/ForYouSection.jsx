@@ -14,10 +14,10 @@ const ForYouSection = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "You value structure and efficiency.",
-                                "You are willing to invest in high-level accountability.",
-                                "You want sustainable results, not a quick fix.",
-                                "You are ready to commit to a 90-day process."
+                                "You have PCOS, Thyroid issues, or Diabetes and want real results.",
+                                "You are willing to be patient and trust the process.",
+                                "You want a medically aware coach, not generic gym advice.",
+                                "You are ready to commit to a sustainable 90-day protocol."
                             ].map((item, idx) => (
                                 <li key={idx} className="flex items-start gap-3">
                                     <div className="bg-brand-500 rounded-full p-1 text-white mt-1">
@@ -36,10 +36,10 @@ const ForYouSection = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "You are looking for a quick crash diet.",
-                                "You aren't ready to commit to the process.",
-                                "You represent 'fitness' as just a hobby.",
-                                "You are looking for the cheapest option available."
+                                "You are looking for a quick starvation or crash diet.",
+                                "You aren't ready to be patient with your body's healing process.",
+                                "You want a generic, one-size-fits-all plan.",
+                                "You are not ready to make lifestyle changes alongside medication."
                             ].map((item, idx) => (
                                 <li key={idx} className="flex items-start gap-3">
                                     <div className="bg-neutral-800 rounded-full p-1 text-neutral-500 mt-1">

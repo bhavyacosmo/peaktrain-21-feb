@@ -6,20 +6,24 @@ const FAQSection = () => {
 
     const faqs = [
         {
-            q: "Do I need a gym membership?",
-            a: "While a gym membership is recommended for optimal results (access to varied weights), we can design effective home workout plans if you have basic equipment (dumbbells/bands)."
+            q: "Is this program safe for someone with PCOS or Thyroid issues?",
+            a: "Absolutely. Our coaches are trained to work with clients managing hormonal conditions. Every nutrition and workout plan is designed with your specific condition in mind — no extreme calorie cuts, no foods that spike your hormones."
         },
         {
-            q: "How much time do I need to commit?",
-            a: "Our plans are designed for busy professionals. You'll need about 45-60 minutes for workouts, 3-4 times a week."
+            q: "I have tried every diet but my weight doesn't move. Will this work for me?",
+            a: "Yes. Weight resistance due to PCOS, Thyroid, or Diabetes is a metabolic issue, not a willpower issue. Our protocol focuses on healing your metabolism through structured nutrition and progressive exercise — not starvation."
         },
         {
-            q: "Is this a strict diet plan?",
-            a: "No. We focus on flexible dieting and macronutrient management. You can eat foods you enjoy as long as they fit your daily targets."
+            q: "Do I need to stop my medication to join?",
+            a: "No. We work alongside your medication, not against it. We always recommend you coordinate with your doctor, and we will design a plan fully compatible with your treatment."
         },
         {
-            q: "What keeps me accountable?",
-            a: "You will have a dedicated coach, weekly check-ins, and direct access for questions. We monitor your progress and adjust the plan as needed."
+            q: "How long will it take to see results with a hormonal condition?",
+            a: "Results depend on your specific condition and consistency, but most clients with hormonal conditions begin to see noticeable changes within 4-6 weeks. Our 90-day program is specifically designed to give your body enough time for real, sustainable change."
+        },
+        {
+            q: "What keeps me accountable throughout the program?",
+            a: "You will have a dedicated coach, weekly check-ins, and direct support access at all times. We monitor your progress closely and adjust your plan weekly based on your body's response."
         }
     ];
 
