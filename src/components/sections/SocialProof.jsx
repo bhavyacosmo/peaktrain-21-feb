@@ -52,10 +52,10 @@ const SocialProof = () => {
         <section id="results" className="py-20 bg-neutral-900 text-white">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                    Real Professionals. Real Results.
+                    Better Health. Real Impact.
                 </h2>
                 <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
-                    See what happens when you apply a structured, science-backed approach to your fitness.
+                    Structured, patient-focused care designed to improve long-term well-being.
                 </p>
 
                 <div className="relative overflow-hidden mask-gradient-x">
