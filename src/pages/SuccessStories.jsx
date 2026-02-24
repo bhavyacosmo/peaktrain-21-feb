@@ -274,9 +274,9 @@ const SuccessStories = () => {
                         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-brand-500 rounded-full blur-3xl opacity-20"></div>
                         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-brand-500 rounded-full blur-3xl opacity-20"></div>
 
-                        <h2 className="text-3xl font-bold mb-6 relative z-10">You could be next.</h2>
+                        <h2 className="text-3xl font-bold mb-6 relative z-10">Your Health Transformation Starts Here.</h2>
                         <p className="text-neutral-400 max-w-xl mx-auto mb-8 relative z-10">
-                            Apply now to join the next cohort of high-performing professionals transforming their health.
+                            Apply now to join the next cohort of clients managing PCOS, Thyroid, or Diabetes — and finally see real, lasting results.
                         </p>
                         <Link
                             to="/"
@@ -290,7 +290,7 @@ const SuccessStories = () => {
                             }}
                             className="inline-block px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white font-bold rounded-lg transition-colors shadow-lg shadow-brand-900/50 relative z-10"
                         >
-                            Apply For Coaching
+                            Apply For Healthcare Coaching
                         </Link>
                     </div>
                 </div>
